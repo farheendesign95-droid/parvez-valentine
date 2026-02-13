@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>For Parvez ❤️</title>
+
+<style>
+body{
+  margin:0;
+  font-family:'Segoe UI',sans-serif;
+  background:#061a3a;
+  overflow:hidden;
+  text-align:center;
+  color:#eaf2ff;
+}
+
+/* 🎬 Background Video */
+.bg-video{
+  position:fixed;
+  top:50%;
+  left:50%;
+  min-width:100%;
+  min-height:100%;
+  transform:translate(-50%,-50%) scale(1.05);
+  object-fit:cover;
+  opacity:0.55;
+  z-index:-3;
+}
+
+.overlay{
+  position:fixed;
+  inset:0;
+  background:linear-gradient(to bottom,
+    rgba(6,26,58,0.55),
+    rgba(6,26,58,0.75));
+  z-index:-2;
+}
+
+/* 💙 Glow */
+.glow{
+  position:fixed;
+  width:700px;
+  height:700px;
+  background:radial-gradient(circle,rgba(0,140,255,0.25),transparent 70%);
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  z-index:-1;
+  animation:glowPulse 4s ease-in-out infinite;
+}
+@keyframes glowPulse{
+  50%{opacity:.7;transform:translate(-50%,-50%) scale(1.1);}
+}
+
+/* 💙 Hearts */
+.heart{
+  position:fixed;
+  bottom:-20px;
+  color:#4dabff;
+  animation:floatUp linear infinite;
+  opacity:.9;
+}
+@keyframes floatUp{
+  to{transform:translateY(-110vh);opacity:0;}
+}
+
+/* ✨ Sparks */
+.spark{
+  position:fixed;
+  color:#9ecbff;
+  font-size:10px;
+  animation:floatSpark linear infinite;
+  opacity:.8;
+}
+@keyframes floatSpark{
+  to{transform:translateY(-110vh);opacity:0;}
+}
+
+/* 💬 Title */
+.main-text{
+  margin-top:11vh;
+  font-size:54px;
+  font-weight:900;
+  color:#9ecbff;
+}
+
+/* 🚗 BMW Speedometer — HIGH VISIBILITY */
+.speedo{
+  margin:30px auto;
+  width:220px;
+  height:220px;
+  border:12px solid #00aaff; /* brighter BMW blue */
+  border-radius:50%;
+  position:relative;
+  box-shadow:
+    0 0 25px rgba(0,170,255,0.7),
+    inset 0 0 20px rgba(0,170,255,0.25);
+  display:none;
+  background:rgba(0,0,0,0.35); /* 👈 makes circle visible */
+}
+
+/* needle */
+.needle{
+  position:absolute;
+  width:5px;
+  height:85px;
+  background:#00e5ff; /* bright needle */
+  top:20px;
+  left:50%;
+  transform-origin:bottom center;
+  transform:rotate(-120deg);
+  transition:transform 1.6s cubic-bezier(.4,2,.6,1);
+  box-shadow:0 0 12px rgba(0,229,255,0.9);
+}
+
+/* 💘 Button */
+.love-btn{
+  margin-top:28px;
+  padding:16px 48px;
+  font-size:20px;
+  font-weight:bold;
+  border-radius:30px;
+  border:none;
+  background:linear-gradient(45deg,#0066ff,#4dabff);
+  color:#fff;
+  cursor:pointer;
+  box-shadow:0 14px 30px rgba(0,102,255,.35);
+  transition:.3s;
+}
+.love-btn:hover{transform:scale(1.08);}
+
+/* 💌 Letter */
+.letter{
+  max-width:820px;
+  margin:30px auto;
+  padding:26px 30px;
+  font-size:20px;
+  line-height:1.7;
+  color:#eaf2ff;
+  background:rgba(10,25,60,.65);
+  backdrop-filter:blur(12px);
+  border-radius:20px;
+  display:none;
+  animation:fadeIn 1.2s ease;
+  text-align:left;
+  box-shadow:0 10px 40px rgba(0,0,0,.35);
+}
+@keyframes fadeIn{
+  from{opacity:0;transform:translateY(30px);}
+  to{opacity:1;transform:translateY(0);}
+}
+
+.signature{
+  margin-top:18px;
+  font-weight:bold;
+  color:#4dabff;
+  text-align:right;
+}
+</style>
+</head>
+
+<body>
+
+<!-- videos -->
+<video class="bg-video" autoplay muted loop playsinline>
+  <source src="video1.mp4" type="video/mp4">
+</video>
+
+<video class="bg-video" autoplay muted loop playsinline style="opacity:.25;">
+  <source src="video2.mp4" type="video/mp4">
+</video>
+
+<div class="overlay"></div>
+<div class="glow"></div>
+
+<h1 class="main-text">
+Parvez Hussain — Happy Valentine’s Day 💙
+</h1>
+
+<!-- 🚗 Speedometer -->
+<div id="speedo" class="speedo">
+  <div id="needle" class="needle"></div>
+</div>
+
+<button class="love-btn" onclick="showLove()">
+Click to Execute ❤️
+</button>
+
+<div id="letter" class="letter">
+<!-- (your letter kept exactly same) -->
+Parvez, you are the best and most amazing person I have ever got in my life.  
+In fact, you are my life. I am so lucky and grateful to have you.
+
+I can say this to you every single day because I want to celebrate you every day in my life. Whenever I argue with you, it hurts me more than you. Sometimes we will be happy and sometimes we will be sad — there will always be ups and downs — but I promise one thing: I will always be by your side, no matter what.
+
+You motivate me to do more with life, to be more empathetic towards others, and to love unconditionally. I want to grow old with you. I have so many dreams to fulfill with you.
+
+I want to see your first BMW reaction.  
+I want to see you being successful with IICLUB.  
+I want to see our little family growing.  
+I want to see a farmland where you and I are living peacefully — healthy, luxury life.
+
+There is so much to say… and for that I have to make a proper website.  
+That's it for now.
+
+<strong>This planet is very small in the entire universe… and you and Nihal are my whole world on this earth.</strong>
+
+<div class="signature">
+LOVE YOU FOREVER & EVER & EVER 💙  
+— Farheen
+</div>
+</div>
+
+<script>
+// button action
+function showLove(){
+  document.getElementById("letter").style.display="block";
+  document.getElementById("speedo").style.display="block";
+  setTimeout(()=>{
+    document.getElementById("needle").style.transform="rotate(45deg)";
+  },100);
+}
+
+// hearts
+function createHeart(){
+  const h=document.createElement("div");
+  h.className="heart";
+  h.innerHTML="💙";
+  h.style.left=Math.random()*100+"vw";
+  h.style.fontSize=(Math.random()*22+14)+"px";
+  h.style.animationDuration=(Math.random()*3+4)+"s";
+  document.body.appendChild(h);
+  setTimeout(()=>h.remove(),7000);
+}
+setInterval(createHeart,260);
+
+// sparks
+function createSpark(){
+  const s=document.createElement("div");
+  s.className="spark";
+  s.innerHTML="✨";
+  s.style.left=Math.random()*100+"vw";
+  s.style.animationDuration=(Math.random()*4+5)+"s";
+  document.body.appendChild(s);
+  setTimeout(()=>s.remove(),8000);
+}
+setInterval(createSpark,420);
+</script>
+
+</body>
+</html>
